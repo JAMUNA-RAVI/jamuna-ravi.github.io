@@ -1,1 +1,99 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jamuna Ravi - Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0f0f12;color:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+nav{position:fixed;top:0;width:100%;background:rgba(15,15,18,0.9);backdrop-filter:blur(10px);padding:18px 8%;display:flex;justify-content:space-between;align-items:center;z-index:100;border-bottom:1px solid #222}
+nav .logo{font-weight:700;font-size:22px}
+nav .logo span{color:#a78bfa}
+nav ul{display:flex;list-style:none;gap:30px}
+nav ul li{opacity:0.8}
+.hero{min-height:100vh;display:flex;align-items:center;padding:0 8%;gap:50px;padding-top:80px}
+.hero-text{flex:1}
+.hero-text h4{color:#a78bfa;letter-spacing:3px;margin-bottom:15px}
+.hero-text h1{font-size:56px;line-height:1.1;margin-bottom:20px}
+.hero-text h1 span{background:linear-gradient(90deg,#a78bfa,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero-text p{opacity:0.7;max-width:500px;margin-bottom:30px;font-size:18px}
+.btns{display:flex;gap:15px}
+.btn{padding:12px 28px;border-radius:30px;font-weight:600;display:inline-block}
+.btn-primary{background:#fff;color:#000}
+.btn-outline{border:1px solid #333}
+.hero-img{flex:1;display:flex;justify-content:center}
+.hero-img .card{width:340px;height:420px;background:linear-gradient(180deg,#1e1e24,#15151a);border-radius:30px;border:1px solid #2a2a32;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px;text-align:center}
+.hero-img .avatar{width:130px;height:130px;border-radius:50%;background:linear-gradient(135deg,#a78bfa,#f472b6);display:flex;align-items:center;justify-content:center;font-size:50px;font-weight:700;margin-bottom:20px}
+section{padding:90px 8%}
+.sec-title{font-size:36px;margin-bottom:50px;text-align:center}
+.sec-title span{color:#a78bfa}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+.card-box{background:#18181d;border:1px solid #26262f;padding:28px;border-radius:20px}
+.skills{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:800px;margin:0 auto}
+.skill{background:#1c1c22;border:1px solid #2a2a32;padding:10px 20px;border-radius:30px;font-size:14px}
+.contact-box{max-width:600px;margin:0 auto;background:#18181d;border:1px solid #26262f;padding:40px;border-radius:24px;text-align:center}
+.contact-box a{color:#a78bfa;font-weight:600}
+footer{padding:30px;text-align:center;opacity:0.4;font-size:13px;border-top:1px solid #1f1f25}
+@media(max-width:900px){.hero{flex-direction:column;text-align:center}.btns{justify-content:center}.hero-text h1{font-size:40px}nav ul{display:none}}
+</style>
+</head>
+<body>
+<nav><div class="logo">JAMUNA <span>RAVI</span></div>
+<ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+<div class="hero" id="home">
+<div class="hero-text">
+<h4>HELLO, I'M</h4>
+<h1>Jamuna <br><span>Ravi</span></h1>
+<p>A passionate learner & creator building beautiful digital experiences. Focused on web development, design, and problem solving.</p>
+<div class="btns">
+<a class="btn btn-primary" href="#projects">View Projects</a>
+<a class="btn btn-outline" href="#contact">Contact Me</a>
+</div>
+</div>
+<div class="hero-img">
+<div class="card">
+<div class="avatar">JR</div>
+<h2>Jamuna Ravi</h2>
+<p style="opacity:0.6;margin-top:8px">Developer | Designer | Learner</p>
+<p style="opacity:0.4;font-size:12px;margin-top:20px">Coimbatore, India</p>
+</div>
+</div>
+</div>
+<section id="about">
+<h2 class="sec-title">About <span>Me</span></h2>
+<div class="grid">
+<div class="card-box"><h3>Who I Am</h3><p>I am Jamuna Ravi from Coimbatore. Curious, dedicated, and always eager to learn new technologies and build meaningful products.</p></div>
+<div class="card-box"><h3>What I Do</h3><p>I create responsive websites, portfolios, and UI designs. I love turning ideas into reality with clean code.</p></div>
+<div class="card-box"><h3>Goal</h3><p>To grow as a full-stack developer and work on impactful projects. Open to internships and collaborations.</p></div>
+</div>
+</section>
+<section id="skills">
+<h2 class="sec-title">My <span>Skills</span></h2>
+<div class="skills">
+<div class="skill">HTML5</div><div class="skill">CSS3</div><div class="skill">JavaScript</div><div class="skill">Responsive Design</div><div class="skill">UI/UX</div><div class="skill">Git & GitHub</div><div class="skill">Python</div><div class="skill">C / C++</div><div class="skill">Figma</div>
+</div>
+</section>
+<section id="projects">
+<h2 class="sec-title">My <span>Projects</span></h2>
+<div class="grid">
+<div class="card-box"><h3>Personal Portfolio</h3><p>Modern, responsive portfolio hosted on GitHub Pages with clean animations.</p></div>
+<div class="card-box"><h3>Student Management System</h3><p>System to manage student records with CRUD operations and clean UI.</p></div>
+<div class="card-box"><h3>Creative Designs</h3><p>Posters, logos, and social media creatives designed for college events.</p></div>
+</div>
+</section>
+<section id="contact">
+<h2 class="sec-title">Get In <span>Touch</span></h2>
+<div class="contact-box">
+<h3>Let's Connect!</h3>
+<p style="opacity:0.6;margin-bottom:20px">I'm open to new opportunities. Feel free to reach out!</p>
+<p>Email: <a href="mailto:jamuna.ravi@email.com">jamuna.ravi@email.com</a></p>
+<p>GitHub: <a href="https://github.com/JAMUNA-RAVI" target="_blank">JAMUNA-RAVI</a></p>
+<br><a class="btn btn-primary" href="mailto:jamuna.ravi@email.com">Say Hello</a>
+</div>
+</section>
+<footer>© 2026 Jamuna Ravi • Built with love and hosted on GitHub Pages</footer>
+</body>
+</html>
